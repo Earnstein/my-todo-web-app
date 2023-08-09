@@ -25,11 +25,14 @@ for index, todo in enumerate(todo_contents):
             st.experimental_rerun()
 
 
+
 st.text_input(label="todo",
               label_visibility="hidden",
               placeholder="Add new todo...",
               key='new_todo',
               )
+
+
 if st.session_state["new_todo"] == "":
     pass
 else:
